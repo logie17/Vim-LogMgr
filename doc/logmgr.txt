@@ -1,0 +1,72 @@
+*logmgr.txt* A simple log manager
+LogMgr Help                                      *logmgr* *LogMgr*
+
+Logan Bell <loganbell@gmail.com>
+
+04 Mar 2009
+
+Introduction
+=============
+
+LogMgr is a simple log manager. 
+
+Installation
+=============
+
+   doc/logmgr.txt
+   plugin/logmgr.vim
+
+To access this help file from within Vim you must first update your help
+tags:
+
+   :helptags ~/.vim/doc
+
+The path may need to be modified depending on where you install to.
+Once you have done this you can access the help with this command:
+
+   :help logmgr
+
+Within your .vimrc add the following global variable
+
+    let logmgr_logs='/path/to/log/file:/path/to/log/file'
+
+The logmgr_logs variable is a string that has log files delimited by ":".
+
+Mappings
+=================
+
+The plugin defines some new mappings:
+
+   \lox    Depending on how many log files you have setup. For example "\lo1" will open
+           the first log file.
+   \tc     Closes the buffer window
+
+Note: \lox will refresh the buffer
+
+License
+========
+
+LogMgr, a simple log management script for Vim 
+Copyright (C) 2009  Logan J. Bell
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Contact
+========
+
+LogMgr was written by Logan J. Bell
+<logan.bell@gmail.com>
+http://www.loganbell.org
+
